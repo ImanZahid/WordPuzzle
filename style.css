@@ -1,0 +1,250 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ccc;
+}
+.root {
+  width: 450px;
+  height: 900px;
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -200px 0px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.puzzle {
+  height: 400px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 48px);
+  grid-template-rows: repeat(5, 48px);
+  row-gap: 5px;
+  column-gap: 5px;
+  user-select: none;
+}
+
+.puzzle-alphabet {
+  width: 48px;
+  height: 48px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  border-radius: 10px;
+}
+
+.word-day.puzzle-alphabet-D {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.word-day.puzzle-alphabet-A {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.word-day.puzzle-alphabet-Y {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.word-dear.puzzle-alphabet-D {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.word-dear.puzzle-alphabet-E {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.word-dear.puzzle-alphabet-A {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.word-dear.puzzle-alphabet-R {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.word-ready.puzzle-alphabet-R {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.word-ready.puzzle-alphabet-E {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.word-ready.puzzle-alphabet-A {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.word-ready.puzzle-alphabet-D {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.word-ready.puzzle-alphabet-Y {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+.word-ear.puzzle-alphabet-E {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.word-ear.puzzle-alphabet-A {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.word-ear.puzzle-alphabet-R {
+  grid-column: 6;
+  grid-row: 2;
+}
+
+.word-read.puzzle-alphabet-R {
+  grid-column: 6;
+  grid-row: 2;
+}
+
+.word-read.puzzle-alphabet-E {
+  grid-column: 6;
+  grid-row: 3;
+}
+
+.word-read.puzzle-alphabet-A {
+  grid-column: 6;
+  grid-row: 4;
+}
+
+.word-read.puzzle-alphabet-D {
+  grid-column: 6;
+  grid-row: 5;
+}
+
+.active-alphabets {
+  background-color: darkgrey;
+  padding: 10px;
+  border-radius: 10px;
+  color: #5a5a5a;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 24px;
+  min-height: 28.125px;
+  opacity: 0;
+}
+
+.alphabets {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.word-input {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.word-input-row-1-button {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.word-input-row-2-alphabet-1-button {
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.word-input-row-2-alphabet-2-button {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
+
+.word-input-row-3-alphabet-1-button {
+  position: absolute;
+  top: 68%;
+  left: 15%;
+}
+
+.word-input-row-3-alphabet-2-button {
+  position: absolute;
+  top: 68%;
+  right: 15%;
+}
+
+.word-input-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 32px;
+  width: 48px;
+  border-radius: 100%;
+}
+
+.word-input-button.active {
+  background-color: darkgrey;
+}
+
+.shuffle-icon {
+  cursor: pointer;
+  user-select: none;
+  font-size: 32px;
+}
+
+.shuffle-button {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 38%;
+  left: 40%;
+}
+
+.tip-icon {
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: -53px;
+  margin-right: 20px;
+}
+
+.tip-icon span {
+  font-size: 30px;
+  color: darkgrey;
+}
+
+.tip-icon span:hover {
+  color: #e5e500;
+}
